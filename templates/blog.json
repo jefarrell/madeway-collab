@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-blog",
+      "settings": {
+        "show-breadcrumbs": false,
+        "recent-posts": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

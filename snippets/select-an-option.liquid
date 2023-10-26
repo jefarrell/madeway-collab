@@ -1,0 +1,33 @@
+{% comment %}
+  See https://docs.shopify.com/themes/customization/products/how-to-add-a-pick-an-option-to-drop-downs
+{% endcomment %}
+  <!-- <script>console.log("loads----->>>>", product.selected_variant)</script>
+{% unless product.selected_variant %} -->
+  <script>console.log("up here----->>>>")</script>
+  {% if product.variants.size > 1 %}
+    <script>
+    // var $addToCartForm = $('form[action="/cart/add"]');
+    //   console.log("--- ", $addToCartForm)
+    // if (window.MutationObserver && $addToCartForm.length) {
+    //   console.log("in iffff")
+    //   if (typeof observer === 'object' && typeof observer.disconnect === 'function') {
+    //     observer.disconnect();
+    //   }
+    //   var config = { childList: true, subtree: true };
+    //   var observer = new MutationObserver(function() {      
+    //     {% for option in product.options %}
+    //       $('.single-option-selector:eq({{ forloop.index0 }})')
+    //         .filter(function() { 
+    //           return $(this).find('option').size() > 1  
+    //         })
+    //         .prepend('<option value="">Select an Option</option>')
+    //         .val('')
+    //         .trigger('change');
+    //     {% endfor %}
+    //     observer.disconnect();
+    //   });  
+    //   observer.observe($addToCartForm[0], config);
+    // } 
+    </script>  
+  {% endif %}
+{% endunless %}

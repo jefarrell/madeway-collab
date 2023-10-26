@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-cart",
+      "settings": {
+        "show-breadcrumbs": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

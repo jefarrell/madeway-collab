@@ -1,0 +1,60 @@
+<section class="home-section content-area side-by-mounting">
+<h3 class="side-by-title">Mounting Plates</h3>
+  <div class="side-by">
+    <div class="side-by-column">
+      <h3 class="side-by-heading picture-block-heading">Flat Plate</h3>
+      <img class="side-by-img" src="https://cdn.shopify.com/s/files/1/0737/2236/4188/files/Quad_Flat_Plate.jpg?v=1697160872" />
+      <p class="picture-block-body side-by-body">3/16” thick, 5” x your chosen width. Our standard Flat Plate comes with 5/16” x 1” slotted holes to accommodate seasonal wood movement. It is a solid solution for attaching the legs or base to your tabletop. </p>
+    </div>
+  <div class="side-by-column">
+    <h3 class="side-by-heading picture-block-heading">Full Frame</h3>
+    <img class="side-by-img" src="https://cdn.shopify.com/s/files/1/0737/2236/4188/files/Quad_Full-Frame.jpg?v=1697160873" />
+    <p class="picture-block-body side-by-body">With added tube steel reinforcement and 5/16” x 1” slotted holes, our Full Frame serves two purposes. First, it acts as a substitute for channel steel inserts by preventing wood movement, cupping, and warping. This reduces cost and labor time. Second, it eliminates end-to-end, lateral shake in the table by maximizing the rigidity of the mounting plate. If rock solid stability is the goal, the Full Frame is the way to go.</p>
+  </div>
+</div>
+</section>
+{% schema %}
+{
+   "name":"Mounting Plate (Full)",
+   "class":"shopify-section--mounting-plate",
+   "presets":[
+      {
+         "category":"Mounting Plate",
+         "name":"Mounting Plate (Full)"
+      }
+   ],
+   "disabled_on":{
+      "groups":[
+         "*"
+      ]
+   }
+}
+{% endschema %}
+
+{% stylesheet %}
+.side-by-mounting {
+  width: 100% !important;
+  max-width: initial !important;
+  padding: 5% 10% !important;
+  margin: 32px 0 !important;
+  background-color: #102b53 !important;
+  @media only screen and (max-width: 768px) {
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+  }
+}
+.side-by-title, .side-by-heading {
+  font-size: 32px !important;
+  color: white !important;
+  text-align: center !important;
+}
+.side-by-img {
+  max-width: 100% !important;
+}
+.side-by-body {
+  color: white !important;
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,126 @@
+{% liquid
+  assign heading = section.settings.heading
+  assign text = section.settings.text
+  assign paymentOptions = section.settings.footer-payment-options
+  assign mailingList = section.settings.footer-mailing-list
+  assign alternateFooter = section.settings.footer-alternate
+  assign alternateFooterMenu = section.settings.footer-secondary-menu
+  assign country_selector = section.settings.show_currency_selector
+  assign locale_selector = section.settings.show_locale_selector
+%}
+
+<script
+  type="application/json"
+  data-section-type="static-footer"
+  data-section-id="{{ section.id }}"
+>
+</script>
+
+<div class="static-footer">
+  {% unless alternateFooter %}
+    {%
+      render 'footer-one',
+      heading: heading,
+      text: text,
+      mailingList: mailingList,
+      paymentOptions: paymentOptions,
+      country_selector: country_selector,
+      locale_selector: locale_selector,
+    %}
+  {% else %}
+    {%
+      render 'footer-two',
+      heading: heading,
+      text: text,
+      mailingList: mailingList,
+      paymentOptions: paymentOptions,
+      country_selector: country_selector,
+      locale_selector: locale_selector,
+      alternateFooterMenu: alternateFooterMenu,
+    %}
+  {% endunless %}
+</div>
+
+{% schema %}
+{
+  "name": "Footer",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "footer-mailing-list",
+      "label": "Show newsletter form",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Alternate footer"
+    },
+    {
+      "type": "checkbox",
+      "id": "footer-alternate",
+      "label": "Use alternate footer layout",
+      "default": false
+    },
+    {
+      "type": "link_list",
+      "id": "footer-secondary-menu",
+      "label": "Secondary footer menu",
+      "info": "This menu won't show dropdown items"
+    },
+    {
+      "type": "header",
+      "content": "Follow on Shop",
+      "info": "Display follow button for your storefront on the Shop app. [Learn more](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/follow-on-shop)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_follow_on_shop",
+      "default": true,
+      "label": "Enable Follow on Shop"
+    },
+    {
+      "type": "header",
+      "content": "Language Selector",
+      "info": "To add a language, go to your [language settings.](/admin/settings/languages)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "Show language selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Country Selector",
+      "info": "To add a country, go to your [payment settings.](/admin/settings/payments)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_selector",
+      "label": "Show country selector",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Payment icons"
+    },
+    {
+      "type": "checkbox",
+      "id": "footer-payment-options",
+      "label": "Show payment icons",
+      "default": false
+    }
+  ]
+}
+
+{% endschema %}

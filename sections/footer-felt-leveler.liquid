@@ -1,0 +1,66 @@
+<section class="home-section content-area footers wrap">
+<h3 class="side-by-title-light footers">Footing Options</h3>
+<div class="side-by footers">
+<div class="column footers">
+  <h3 class="picture-block-heading footers">Felt Pads</h3>
+  <img class="side-by img footers" src="https://cdn.shopify.com/s/files/1/0737/2236/4188/files/Felt_Pads.jpg?v=1696984759" />
+  <p class="picture-block-body footers">Protect floors and achieve a minimalist look.</p>
+</div>
+<div class="column footers">
+  <h3 class="picture-block-heading footers">Leveler Feet</h3>
+  <img class="side-by img footers" src="https://cdn.shopify.com/s/files/1/0737/2236/4188/files/leveler_foot_caec1a7f-32fb-43cd-8cba-2db5ef92c86b.jpg?v=1697086019" />
+  <p class="picture-block-body footers">Ensure your table is wobble free with this functional add-on.</p>
+</div>
+</div>
+</section>
+{% schema %}
+{
+   "name":"Footers (Felt & Levelers)",
+   "class":"shopify-section--footers",
+   "presets":[
+      {
+         "category":"footers",
+         "name":"Footers (Felt & Levelers)"
+      }
+   ],
+   "disabled_on":{
+      "groups":[
+         "*"
+      ]
+   }
+}
+{% endschema %}
+
+{% stylesheet %}
+.content-area.footers.wrap {
+  margin-top: 64px !important;
+}
+.side-by.footers {
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.picture-block-heading.footers {
+  font-size: 24px;
+  text-align: center;
+}
+.column.footers {
+  flex: 50% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding-right: 32px !important;
+}
+.side-by-title-light.footers {
+  font-size: 32px !important;
+  color: black;
+  text-align: center;
+}
+.footers.img {
+  max-width: 30% !important;
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

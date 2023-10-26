@@ -1,0 +1,28 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-page",
+      "settings": {
+        "show-breadcrumbs": false,
+        "title": "",
+        "content": ""
+      }
+    },
+    "eb8e683b-b87f-471f-8678-82a53c13a5f8": {
+      "type": "dynamic-image-with-text",
+      "settings": {
+        "margin": "regular",
+        "alignment": "left",
+        "desktop_height": "natural",
+        "mobile_height": "natural",
+        "parallax": false,
+        "title": "Image with text",
+        "content": "<p>Say a bit about your brand, a specific product, or promotion.<\/p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "eb8e683b-b87f-471f-8678-82a53c13a5f8"
+  ]
+}

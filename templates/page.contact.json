@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-page-contact",
+      "disabled": true,
+      "custom_css": [
+        ".text-content-wrap {max-width: none;}"
+      ],
+      "settings": {
+        "show-breadcrumbs": false
+      }
+    },
+    "82dac454-7a26-4b59-b9e5-6367ec3d3911": {
+      "type": "pxs-map",
+      "disabled": true,
+      "settings": {
+        "section_height": "medium",
+        "title": "Madeway design",
+        "content": "<p>info@madewaydesign.com<\/p><p>971.801.8215<\/p><p>7911 NE 33rd Dr, Unit 210, Portland OR 97211<\/p>",
+        "text_alignment": "center",
+        "layout": "overlay-center-center",
+        "layout_mobile": "below",
+        "address": "7911 NE 33rd Dr, Unit 210, Portland OR 97211",
+        "api_key": "",
+        "enable_custom_colors": false,
+        "foreground_color": "#292929",
+        "background_color": "#ffffff",
+        "zoom": 2,
+        "overlay_color": "#000000",
+        "opacity": 10
+      }
+    },
+    "c61780e3-1ca1-43b1-a631-c1378f3bd517": {
+      "type": "dynamic-custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d2792.488610972975!2d-122.63754732314375!3d45.580721525655825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a6f52b11e26b%3A0xe0288c7876116834!2s7911%20NE%2033rd%20Dr%2C%20Portland%2C%20OR%2097211!5e0!3m2!1sen!2sus!4v1696297335730!5m2!1sen!2sus\" width=\"100%\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"<\\\/iframe>"
+      }
+    },
+    "97c41255-7d33-4be9-b6f6-de18ef317f09": {
+      "type": "dynamic-custom-liquid",
+      "disabled": true,
+      "custom_css": [
+
+      ],
+      "settings": {
+        "custom_liquid": "<div style=\"width: 50%\"><iframe width=\"100%\" height=\"600\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https:\/\/maps.google.com\/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Madeway%20Design%207911%20NE%2033rd%20Dr,%20Unit%20210,%20Portland%20OR%2097211+(Madeway%20Design)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed\"><a href=\"https:\/\/www.maps.ie\/population\/\">Calculate population in area<\/a><\/iframe><\/div>"
+      }
+    },
+    "1418ea39-7be6-4207-9c85-985441808cb5": {
+      "type": "dynamic-custom-liquid",
+      "custom_css": [
+        ".container {display: flex; flex-direction: row; justify-content: space-between;}",
+        ".container-child {width: 48%;}",
+        "@media (max-width: 720px) {.container {display: flex; flex-direction: column; } .container-child {width: 100%; } .container-child:last-child {margin-top: 10px; }}",
+        ".info {width: 100%; display: flex; justify-content: space-evenly; flex-direction: column; margin-bottom: 32px;}",
+        ".contact {font-size: 16px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"container\">\n  <div class=\"container-child\">   \n{% form 'contact' %}\n      {% if form.errors %}\n        <div class=\"alert-message error\">\n          <span>{{ 'contact.error' | t }}<\/span>\n        <\/div>\n      {% endif %}\n    \n      {% if form.posted_successfully? %}\n        <div class=\"alert-message success\">\n          <span>{{ 'contact.success' | t }}<\/span>\n        <\/div>\n      {% else %}\n        <div class=\"field-wrap author\">\n          <label for=\"contact-form__name\">\n            {{- 'general.name' | t -}}\n          <\/label>\n    \n          <input\n            class=\"\n              field\n              {% if form.errors contains 'author' %}\n                error\n              {% endif %}\n            \"\n            id=\"contact-form__name\"\n            type=\"text\"\n            name=\"contact[name]\"\n            placeholder=\"{{ 'general.name_placeholder' | t }}\"\n            value=\"\"\n          >\n        <\/div>\n    \n        <div class=\"field-wrap email\">\n          <label for=\"contact-form__email\">\n            {{- 'general.email' | t -}}\n          <\/label>\n    \n          <input\n            class=\"\n              field\n              {% if form.errors contains 'email' %}\n                error\n              {% endif %}\n            \"\n            id=\"contact-form__email\"\n            type=\"text\"\n            name=\"contact[email]\"\n            placeholder=\"{{ 'general.email_placeholder' | t }}\"\n            value=\"\"\n          >\n        <\/div>\n    \n        <div class=\"field-wrap body\">\n          <label for=\"contact-form__message\">\n            {{- 'general.message' | t -}}\n          <\/label>\n    \n          <textarea\n            class=\"\n              field\n              {% if form.errors contains 'body' %}\n                error\n              {% endif %}\n            \"\n            id=\"contact-form__message\"\n            name=\"contact[body]\"\n          ><\/textarea>\n        <\/div>\n    \n        <button\n          class=\"\n            action-button\n            submit-button\n          \"\n          type=\"submit\"\n        >\n          {{- 'general.submit' | t -}}\n        <\/button>\n      {% endif %}\n    {% endform %}\n  <\/div>\n  <div class=\"container-child map\">\n<div class=\"info\">\n<a \nclass=\"contact\" href=\"mailto:info@madewaydesign.com\">Email: info@madewaydesign<\/a>\n<a class=\"contact\" href=\"tel:971.801.8215\">Phone: 971.801.8215<\/a> \n<\/div>\n\n<iframe width=\"100%\" height=\"600\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" src=\"https:\/\/maps.google.com\/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Madeway%20Design%207911%20NE%2033rd%20Dr,%20Unit%20210,%20Portland%20OR%2097211+(Madeway%20Design)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed\"><a href=\"https:\/\/www.maps.ie\/population\/\">Calculate population in area<\/a><\/iframe><\/div>\n<\/div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "82dac454-7a26-4b59-b9e5-6367ec3d3911",
+    "c61780e3-1ca1-43b1-a631-c1378f3bd517",
+    "97c41255-7d33-4be9-b6f6-de18ef317f09",
+    "1418ea39-7be6-4207-9c85-985441808cb5"
+  ]
+}

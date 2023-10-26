@@ -1,0 +1,69 @@
+{% comment %}
+@param headerLayout {String}
+  The header layout setting: can be one of normal, minimal, minimal-sticky, expanded
+
+@param headerCenter {Boolean}
+  The center logo setting
+
+@param logo {Image}
+  Logo image
+
+@param logoWidth {Number}
+  The width of the logo set by the merchant
+
+@param hiddenOnMobile {Boolean}
+  Whether the element will be hidden on desktop
+
+@param hiddenOnDesktop {Boolean}
+  Whether the element will be hidden on desktop
+{% endcomment %}
+
+{% assign heading = 'h2' %}
+{% if template == 'index' or template contains 'customers' %}
+  {% assign heading = 'h1' %}
+{% endif %}
+
+<{{ heading }}
+  class="
+    store-title
+    {% if logo != blank %}store-logo{% endif %}
+    {% if hiddenOnDesktop %}store-title--hidden-on-desktop{% endif %}
+    {% if hiddenOnMobile %}store-title--hidden-on-mobile{% endif %}
+  "
+  {% if logo != blank %}
+    style="max-width: {{ logoWidth }}px;"
+  {% endif %}
+
+>
+  {% if logo != blank %}
+    <a
+      href="{{ routes.root_url }}"
+      style="max-width: {{ logoWidth }}px;"
+      aria-label="{{ shop.name }}"
+    >
+      {%
+        render 'rimg'
+        img: logo,
+        alt: shop.description,
+        size: '800x800',
+        focal_point: logo.presentation.focal_point,
+      %}
+    </a>
+  {% else %}
+    {{ shop.name | link_to: routes.root_url }}
+  {% endif %}
+</{{ heading }}>
+
+<style>
+  {% if headerLayout != 'normal' and headerCenter == false and logo != blank %}
+    .store-title {
+      width: {{ logoWidth | plus: 30 }}px;
+    }
+
+    @media (max-width: 960px) {
+      .store-title {
+        width: auto;
+      }
+    }
+  {% endif %}
+</style>

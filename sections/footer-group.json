@@ -1,0 +1,23 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "static-footer",
+      "settings": {
+        "heading": "",
+        "text": "",
+        "footer-mailing-list": false,
+        "footer-alternate": false,
+        "footer-secondary-menu": "",
+        "show_follow_on_shop": true,
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "footer-payment-options": false
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

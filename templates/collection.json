@@ -1,0 +1,26 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-collection",
+      "custom_css": [
+        ".product-card-footer,.product-card-footer-mobile {padding-top: 16px; margin-top: 0; padding-left: 10px;}",
+        ".product-inner:hover .product-card-footer {background-color: var(--shopify-editor-setting-nav-link-colour) !important; transition: background-color 200ms ease;}",
+        ".product-inner:hover .product-card-footer > .product-card-details > .title {color: white !important; transition: color 200ms ease;}"
+      ],
+      "settings": {
+        "show-breadcrumbs": false,
+        "show-collection-image": false,
+        "rows": 11,
+        "products_per_row": 4,
+        "enable-sorting": false,
+        "enable_filter": true,
+        "collection-sidebar": false,
+        "collection-sidebar-menu": "",
+        "pagination-style": "jump-to-page"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

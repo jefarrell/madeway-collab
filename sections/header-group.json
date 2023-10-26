@@ -1,0 +1,40 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement_bar": {
+      "type": "pxs-announcement-bar",
+      "settings": {
+        "show_announcement": false,
+        "announcement_home_only": true,
+        "announcement_text": "Free shipping on orders over $200",
+        "announcement_text_mobile": "Free shipping on orders over $200",
+        "announcement_link": "",
+        "announcement_color": "#ffffff",
+        "announcement_background": "#07114a"
+      }
+    },
+    "header": {
+      "type": "static-header",
+      "custom_css": [
+        ".main-header--nav-links,.main-header--tools-group {@media (min-width: 1024px) {margin-top: 40px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/MWD_Logo_Large_2921f65a-f3c2-41c6-9f86-7d5a6e3a83f0.png",
+        "logo_width": 350,
+        "header-layout": "minimal-sticky",
+        "center-header": true,
+        "social-icons": false,
+        "show-labels": false,
+        "cart-icon": "cart",
+        "live_search_enabled": true,
+        "menu": "main-menu",
+        "top-level-columns": "one-column"
+      }
+    }
+  },
+  "order": [
+    "announcement_bar",
+    "header"
+  ]
+}

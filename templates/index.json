@@ -1,0 +1,152 @@
+{
+  "sections": {
+    "dynamic-slideshow-1": {
+      "type": "dynamic-slideshow",
+      "blocks": {
+        "block-1": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Vista_Cozy_CROP.jpg",
+            "slide_title": "Finish Strong",
+            "caption": "Custom steel table bases worthy of your workmanship.",
+            "button": "Shop all products",
+            "link": "shopify:\/\/pages\/main-collections",
+            "alignment": "left top",
+            "show_overlay": true,
+            "background": "#595959",
+            "opacity": 25
+          }
+        }
+      },
+      "block_order": [
+        "block-1"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "desktop_height": "natural",
+        "mobile_height": "small",
+        "full-width": true,
+        "parallax": false,
+        "autoplay_enable": false,
+        "transition": "fade",
+        "autoplay_interval": 5
+      }
+    },
+    "dynamic-logo-list-1": {
+      "type": "dynamic-logo-list",
+      "blocks": {
+        "block-1": {
+          "type": "feature",
+          "settings": {
+            "link": ""
+          }
+        },
+        "block-2": {
+          "type": "feature",
+          "settings": {
+            "link": ""
+          }
+        },
+        "block-3": {
+          "type": "feature",
+          "settings": {
+            "link": ""
+          }
+        },
+        "block-4": {
+          "type": "feature",
+          "settings": {
+            "link": ""
+          }
+        },
+        "block-5": {
+          "type": "feature",
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3",
+        "block-4",
+        "block-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Logo list",
+        "border": false,
+        "logos_per_row": 5
+      }
+    },
+    "dynamic-collection-1": {
+      "type": "dynamic-collection",
+      "settings": {
+        "collection": "dining-desk-height-legs-bases",
+        "title": "Dining & Desk - Legs & Bases",
+        "border": false,
+        "rows": 1,
+        "products_per_row": 4
+      }
+    },
+    "dynamic-image-with-text-1": {
+      "type": "dynamic-image-with-text",
+      "settings": {
+        "margin": "regular",
+        "image": "shopify:\/\/shop_images\/Atlas_Spider_Base.jpg",
+        "alignment": "left",
+        "desktop_height": "natural",
+        "mobile_height": "natural",
+        "parallax": false,
+        "title": "Elevate your vision.",
+        "content": ""
+      }
+    },
+    "78466add-a2c7-4342-87e5-2e03057d2ee0": {
+      "type": "dynamic-collection",
+      "settings": {
+        "collection": "table-bases",
+        "title": "Table Bases",
+        "border": true,
+        "rows": 1,
+        "products_per_row": 4
+      }
+    },
+    "dynamic-image-with-text-2": {
+      "type": "dynamic-image-with-text",
+      "settings": {
+        "margin": "none",
+        "image": "shopify:\/\/shop_images\/Vista_Modern_Shot.jpg",
+        "alignment": "right",
+        "desktop_height": "natural",
+        "mobile_height": "natural",
+        "parallax": false,
+        "title": "Made in the USA",
+        "content": "<p>Discover pieces that perfectly suit your style, handcrafted with care.<\/p>"
+      }
+    },
+    "dynamic-twitter-1": {
+      "type": "dynamic-twitter",
+      "disabled": true,
+      "settings": {
+        "title": "Twitter feed",
+        "border": false,
+        "username": "",
+        "show_images": false,
+        "show_retweets": false
+      }
+    }
+  },
+  "order": [
+    "dynamic-slideshow-1",
+    "dynamic-logo-list-1",
+    "dynamic-collection-1",
+    "dynamic-image-with-text-1",
+    "78466add-a2c7-4342-87e5-2e03057d2ee0",
+    "dynamic-image-with-text-2",
+    "dynamic-twitter-1"
+  ]
+}

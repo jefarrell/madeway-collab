@@ -1,0 +1,155 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_border": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_border": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_border": true
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "show_border": true,
+            "show_gift_card_recipient_form": false
+          }
+        },
+        "email": {
+          "type": "email",
+          "settings": {
+            "show_border": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "price",
+        "form",
+        "email"
+      ],
+      "settings": {
+        "details_alignment": "left",
+        "show-breadcrumbs": false,
+        "gallery_layout": "gallery-left",
+        "gallery_enable_image_zoom": true,
+        "gallery_enable_video_autoplay": true,
+        "gallery_enable_video_looping": true
+      }
+    },
+    "5159e382-81bc-41ef-a628-233d5070c17e": {
+      "type": "accordion",
+      "blocks": {
+        "6b9ff117-e085-42a1-a0cd-4b38ee16b84c": {
+          "type": "plain_text",
+          "settings": {
+            "title": "Product Details",
+            "content": "<div class=\"accordion-wrapper\">\n        <ul class=\"accordion-list column\">\n           <li>This item is MADE-TO-ORDER. Production times vary from 2-4 weeks depending on shop workload. Please check current lead times <a href=\"https:\/\/madeway-design.myshopify.com\/pages\/lead-times\">HERE.<\/a> <\/li>\n           <li>Finish options shown below. <\/li>\n           <li>Mounting Plate - Flat Plate or Pro Plate, details below<\/li>\n        <\/ul>\n        <ul class=\"accordion-list column\">\n           <li>Leveling feet come standard with this design.<\/li>\n           <li>14 gauge 2x2 American hot-rolled tube steel <\/li>\n           <li>Shipping cost calculated at checkout.<\/li>\n           <li>Handmade in the USA.<\/li>\n        <\/ul>\n        <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "6b9ff117-e085-42a1-a0cd-4b38ee16b84c"
+      ],
+      "settings": {
+      }
+    },
+    "5baf8246-ad51-4657-9f68-5b5b190850a4": {
+      "type": "accordion",
+      "blocks": {
+        "89c671b2-a66c-4975-8b8e-2be126b2b072": {
+          "type": "plain_text",
+          "settings": {
+            "title": "Choosing Dimensions",
+            "content": "<div class=\"accordion-wrapper\">\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3 class=\"title\">HEIGHT<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>Remember to subtract the thickness of your table top when selecting your leg or base height.<\/li>\n                 <li>For example, if your tabletop is 2\" thick and you are building a 30\"tall dining table, you will choose 28\" for the height of your table legs or base.<\/li>\n                 <li>Standard finished heights below, subtract table top thickness to calculate proper leg or base height.<\/li>\n              <\/ul>\n              <table border=\"2\">\n                 <tbody>\n                    <tr>\n                       <td>Coffee height<\/td>\n                       <td>14\"-18\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bench Height<\/td>\n                       <td>18\"-20\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Dining Height<\/td>\n                       <td>29\"-30\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Counter Height<\/td>\n                       <td>34\"-36\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bar Height<\/td>\n                       <td>42\"-44\"<\/td>\n                    <\/tr>\n                 <\/tbody>\n              <\/table>\n           <\/div>\n        <\/div>\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3>WIDTH<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>The proper width of your legs or base can vary depending on preference and use. A safe rule of thumb is for the legs to be at least two-thirds of the width of the tabletop<\/li>\n                 <li>For instance, if your tabletop is 36\" wide, the legs should be 24\" or wider, depending on aesthetic preference. Please contact us if you need help with sizing to optimize stability and seating room.<\/li>\n              <\/ul>\n           <\/div>\n        <\/div>\n      <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "89c671b2-a66c-4975-8b8e-2be126b2b072"
+      ],
+      "settings": {
+      }
+    },
+    "9ea8973f-ffcb-47f7-95e6-6397ca3c9a05": {
+      "type": "dynamic-custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        ".column {flex: 50%;}",
+        "li {line-height: 2em;}",
+        ".toggle-icon {float: right;}",
+        ".content-area {padding-top: 0; margin-top: 0;}",
+        "h3 {font-size: 24px;}",
+        ".subtitle {font-size: 16px;}",
+        ".inner-section {margin-bottom: 32px;}",
+        ".dimensions {font-weight: bold; padding-left: 4px;}",
+        "table {margin-top: 16px;}",
+        "td {padding: 8px 32px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"accordion\">\n  <div class=\"accordion-item\">\n     <div class=\"accordion-header picture-block-heading\" onclick=\"toggleAccordion(this)\">\n        Product Details\n        <span class=\"toggle-icon\">+<\/span>\n     <\/div>\n     <div class=\"accordion-content\">\n      <div class=\"accordion-wrapper\">\n        <ul class=\"accordion-list column\">\n           <li>This item is MADE-TO-ORDER. Production times vary from 2-4 weeks depending on shop workload. Please check current lead times <a href=\"https:\/\/madeway-design.myshopify.com\/pages\/lead-times\">HERE.<\/a> <\/li>\n           <li>Finish options shown belown. <\/li>\n           <li>Mounting Plate - Flat Plate or Pro Plate, details below<\/li>\n        <\/ul>\n        <ul class=\"accordion-list column\">\n           <li>Plastic glides or leveling feet, details below<\/li>\n           <li>14 gauge 2x2 American hot-rolled tube steel <\/li>\n           <li>Shipping cost calculated at checkout.<\/li>\n           <li>Handmade in the USA.<\/li>\n        <\/ul>\n        <\/div>\n     <\/div>\n  <\/div>\n<\/div>\n<div class=\"accordion\">\n  <div class=\"accordion-item\">\n     <div class=\"accordion-header picture-block-heading\" onclick=\"toggleAccordion(this)\">\n        Choosing Dimensions\n        <span class=\"toggle-icon\">+<\/span>\n     <\/div>\n     <div class=\"accordion-content\">\n        <div class=\"accordion-wrapper\">\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3 class=\"title\">HEIGHT<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>Remember to subtract the thickness of your table top when selecting your leg or base height.<\/li>\n                 <li>For example, if your tabletop is 2\" thick and you are building a 30\"tall dining table, you will choose 28\" for the height of your table legs or base.<\/li>\n                 <li>Standard finished heights below, subtract table top thickness to calculate proper leg or base height.<\/li>\n              <\/ul>\n              <table border=\"1\">\n                 <tbody>\n                    <tr>\n                       <td>Coffee height<\/td>\n                       <td>14\"-18\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bench Height<\/td>\n                       <td>18\"-20\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Dining Height<\/td>\n                       <td>29\"-30\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Counter Height<\/td>\n                       <td>34\"-36\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bar Height<\/td>\n                       <td>42\"-44\"<\/td>\n                    <\/tr>\n                 <\/tbody>\n              <\/table>\n           <\/div>\n        <\/div>\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3>WIDTH<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>The proper width of your legs or base can vary depending on preference and use. A safe rule of thumb is for the legs to be at least two-thirds of the width of the tabletop<\/li>\n                 <li>For instance, if your tabletop is 36\" wide, the legs should be 24\" or wider, depending on aesthetic preference. Please contact us if you need help with sizing to optimize stability and seating room.<\/li>\n              <\/ul>\n           <\/div>\n         <\/div>\n      <\/div>\n     <\/div>\n  <\/div>\n<\/div>"
+      }
+    },
+    "d7fb97ef-419f-4aa1-a198-1118c2455054": {
+      "type": "dynamic-custom-liquid",
+      "custom_css": [
+        ".details h3 {margin: 0;}",
+        ".details p {margin: 10px 0;}",
+        ".thumbnails {width: fit-content; margin: 0 auto; display: block; @media only screen and (max-width: 768px) {width: unset; margin: unset; display: grid; grid-template-columns: auto auto auto; }}",
+        ".selected-image {width: fit-content; display: flex; justify-content: center;}",
+        ".details {width: 40%; @media only screen and (max-width: 768px) {width: 100%; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<h3 style=\"font-size: 32px; text-align: center\">Finish Options<\/h3>\n<div class=\"image-gallery\">\n  <div class=\"thumbnails\"><\/div>\n\n  <div class=\"selected-image\">\n    <img src=\"placeholder.jpg\" alt=\"\" id=\"largeImage\">\n    <div class=\"details\">\n      <h3 id=\"selectedTitle\"><\/h3>\n      <p id=\"selectedDescription\"><\/p>\n    <\/div>\n  <\/div>\n<\/div>"
+      }
+    },
+    "15c110dd-0457-432a-a310-ab980f1cfc79": {
+      "type": "mounting-plate-pro",
+      "settings": {
+      }
+    },
+    "2d4cc64b-1e9c-4718-bb41-d34f182dc410": {
+      "type": "dynamic-custom-liquid",
+      "custom_css": [
+        ".wrapper {display: flex; flex-direction: column; align-items: center;}",
+        "h3 {font-size: 24px; text-align: center; margin-bottom: 0;}",
+        ".title {font-size: 32px;}",
+        "img {max-width: 30%;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"wrapper\">\n<h3 class=\"title\">Footing Options<\/h3>\n  <h3 class=\"picture-block-heading\">Leveler Feet<\/h3>\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0737\/2236\/4188\/files\/leveler_foot_1024x1024.jpg?v=1696692577\" \/>\n  <p class=\"picture-block-body\">Leveler Feet come standard with this design.<\/p>\n<\/div>"
+      }
+    },
+    "product-recommendations": {
+      "type": "static-product-recommendations",
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5159e382-81bc-41ef-a628-233d5070c17e",
+    "5baf8246-ad51-4657-9f68-5b5b190850a4",
+    "9ea8973f-ffcb-47f7-95e6-6397ca3c9a05",
+    "d7fb97ef-419f-4aa1-a198-1118c2455054",
+    "15c110dd-0457-432a-a310-ab980f1cfc79",
+    "2d4cc64b-1e9c-4718-bb41-d34f182dc410",
+    "product-recommendations"
+  ]
+}

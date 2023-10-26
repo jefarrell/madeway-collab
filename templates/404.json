@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-404",
+      "settings": {
+        "show-breadcrumbs": false,
+        "products-collection": ""
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

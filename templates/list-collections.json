@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-collection-list",
+      "settings": {
+        "show-breadcrumbs": false,
+        "rows": 6,
+        "collections-per-row": 3,
+        "pagination-style": "standard"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

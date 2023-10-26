@@ -1,0 +1,126 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_border": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_border": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_border": true
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "show_border": true,
+            "show_gift_card_recipient_form": false
+          }
+        },
+        "email": {
+          "type": "email",
+          "settings": {
+            "show_border": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "price",
+        "form",
+        "email"
+      ],
+      "settings": {
+        "details_alignment": "left",
+        "show-breadcrumbs": false,
+        "gallery_layout": "gallery-left",
+        "gallery_enable_image_zoom": true,
+        "gallery_enable_video_autoplay": true,
+        "gallery_enable_video_looping": true
+      }
+    },
+    "5159e382-81bc-41ef-a628-233d5070c17e": {
+      "type": "accordion",
+      "blocks": {
+        "6b9ff117-e085-42a1-a0cd-4b38ee16b84c": {
+          "type": "plain_text",
+          "settings": {
+            "title": "Product Details",
+            "content": "<div class=\"accordion-wrapper\">\n        <ul class=\"accordion-list column\">\n           <li>This is a stock item, if we have inventory, your c-channel will ship within 2 business days of ordering.<\/li>\n           <li>Finished in black powder coat. <\/li>\n           <li>5\/16x1 slotted holes.<\/li>\n        <\/ul>\n        <ul class=\"accordion-list column\">\n           \n           <li>Made with 2x1x3\/16 American channel steel. <\/li>\n           <li>Shipping cost calculated at checkout.<\/li>\n           <li>Handmade in the USA.<\/li>\n        <\/ul>\n        <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "6b9ff117-e085-42a1-a0cd-4b38ee16b84c"
+      ],
+      "settings": {
+      }
+    },
+    "5baf8246-ad51-4657-9f68-5b5b190850a4": {
+      "type": "accordion",
+      "blocks": {
+        "89c671b2-a66c-4975-8b8e-2be126b2b072": {
+          "type": "plain_text",
+          "settings": {
+            "title": "Choosing Dimensions",
+            "content": "<div class=\"accordion-wrapper\">\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3 class=\"title\">LENGTH<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>C-Channel inserts should be 4\"-6\" less than the width of your tabletop.<\/li>\n                 \n              <\/ul>\n           <\/div>\n        <\/div>\n      <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "89c671b2-a66c-4975-8b8e-2be126b2b072"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+      }
+    },
+    "9ea8973f-ffcb-47f7-95e6-6397ca3c9a05": {
+      "type": "dynamic-custom-liquid",
+      "disabled": true,
+      "custom_css": [
+        ".column {flex: 50%;}",
+        "li {line-height: 2em;}",
+        ".toggle-icon {float: right;}",
+        ".content-area {padding-top: 0; margin-top: 0;}",
+        "h3 {font-size: 24px;}",
+        ".subtitle {font-size: 16px;}",
+        ".inner-section {margin-bottom: 32px;}",
+        ".dimensions {font-weight: bold; padding-left: 4px;}",
+        "table {margin-top: 16px;}",
+        "td {padding: 8px 32px;}"
+      ],
+      "settings": {
+        "custom_liquid": "<div class=\"accordion\">\n  <div class=\"accordion-item\">\n     <div class=\"accordion-header picture-block-heading\" onclick=\"toggleAccordion(this)\">\n        Product Details\n        <span class=\"toggle-icon\">+<\/span>\n     <\/div>\n     <div class=\"accordion-content\">\n      <div class=\"accordion-wrapper\">\n        <ul class=\"accordion-list column\">\n           <li>This item is MADE-TO-ORDER. Production times vary from 2-4 weeks depending on shop workload. Please check current lead times <a href=\"https:\/\/madeway-design.myshopify.com\/pages\/lead-times\">HERE.<\/a> <\/li>\n           <li>Finish options shown belown. <\/li>\n           <li>Mounting Plate - Flat Plate or Pro Plate, details below<\/li>\n        <\/ul>\n        <ul class=\"accordion-list column\">\n           <li>Plastic glides or leveling feet, details below<\/li>\n           <li>14 gauge 2x2 American hot-rolled tube steel <\/li>\n           <li>Shipping cost calculated at checkout.<\/li>\n           <li>Handmade in the USA.<\/li>\n        <\/ul>\n        <\/div>\n     <\/div>\n  <\/div>\n<\/div>\n<div class=\"accordion\">\n  <div class=\"accordion-item\">\n     <div class=\"accordion-header picture-block-heading\" onclick=\"toggleAccordion(this)\">\n        Choosing Dimensions\n        <span class=\"toggle-icon\">+<\/span>\n     <\/div>\n     <div class=\"accordion-content\">\n        <div class=\"accordion-wrapper\">\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3 class=\"title\">HEIGHT<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>Remember to subtract the thickness of your table top when selecting your leg or base height.<\/li>\n                 <li>For example, if your tabletop is 2\" thick and you are building a 30\"tall dining table, you will choose 28\" for the height of your table legs or base.<\/li>\n                 <li>Standard finished heights below, subtract table top thickness to calculate proper leg or base height.<\/li>\n              <\/ul>\n              <table border=\"1\">\n                 <tbody>\n                    <tr>\n                       <td>Coffee height<\/td>\n                       <td>14\"-18\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bench Height<\/td>\n                       <td>18\"-20\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Dining Height<\/td>\n                       <td>29\"-30\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Counter Height<\/td>\n                       <td>34\"-36\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bar Height<\/td>\n                       <td>42\"-44\"<\/td>\n                    <\/tr>\n                 <\/tbody>\n              <\/table>\n           <\/div>\n        <\/div>\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3>WIDTH<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>The proper width of your legs or base can vary depending on preference and use. A safe rule of thumb is for the legs to be at least two-thirds of the width of the tabletop<\/li>\n                 <li>For instance, if your tabletop is 36\" wide, the legs should be 24\" or wider, depending on aesthetic preference. Please contact us if you need help with sizing to optimize stability and seating room.<\/li>\n              <\/ul>\n           <\/div>\n         <\/div>\n      <\/div>\n     <\/div>\n  <\/div>\n<\/div>"
+      }
+    },
+    "product-recommendations": {
+      "type": "static-product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "5159e382-81bc-41ef-a628-233d5070c17e",
+    "5baf8246-ad51-4657-9f68-5b5b190850a4",
+    "9ea8973f-ffcb-47f7-95e6-6397ca3c9a05",
+    "product-recommendations"
+  ]
+}

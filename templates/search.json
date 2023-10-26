@@ -1,0 +1,13 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-search",
+      "settings": {
+        "show-breadcrumbs": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

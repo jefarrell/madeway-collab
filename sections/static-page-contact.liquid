@@ -1,0 +1,54 @@
+<div data-section-id="{{ section.id }}" data-section-type="static-page-contact">
+
+  <main class="content content-area">
+
+    {% render 'breadcrumbs' %}
+
+    <div class="page-title">
+      <h1 class="label">{{ page.title }}</h1>
+    </div>
+
+    <div class="text-content-wrap">
+      {% if page.content != blank %}
+        <div
+          class="
+            rte
+            text-content
+          "
+        >
+          {{ page.content }}
+        </div>
+      {% endif %}
+
+      <div
+        class="
+          rte
+          full-width-form
+        "
+      >
+        {% render 'contact-form'%}
+      </div>
+    </div>
+
+  </main>
+
+</div>
+
+{% schema %}
+{
+  "name": "Contact page",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "checkbox",
+      "id": "show-breadcrumbs",
+      "label": "Show breadcrumbs",
+      "default": true
+    }
+  ]
+}
+
+{% endschema %}

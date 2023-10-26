@@ -1,0 +1,80 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "show_border": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "show_border": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_border": true
+          }
+        },
+        "9b411270-7b02-4dc4-a2a2-70a89242a76d": {
+          "type": "shopify:\/\/apps\/infinite-options\/blocks\/app-block\/7e73b6f9-82b0-45f5-9b9b-04f446ba1a9b",
+          "settings": {
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "show_border": true,
+            "show_gift_card_recipient_form": false
+          }
+        },
+        "email": {
+          "type": "email",
+          "settings": {
+            "show_border": true
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "show_border": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "description",
+        "price",
+        "9b411270-7b02-4dc4-a2a2-70a89242a76d",
+        "form",
+        "email",
+        "share"
+      ],
+      "settings": {
+        "details_alignment": "left",
+        "show-breadcrumbs": false,
+        "gallery_layout": "gallery-left",
+        "gallery_enable_image_zoom": true,
+        "gallery_enable_video_autoplay": true,
+        "gallery_enable_video_looping": true
+      }
+    },
+    "product-recommendations": {
+      "type": "static-product-recommendations",
+      "disabled": true,
+      "settings": {
+        "show_product_recommendations": true,
+        "product_recommendations_heading": "You may also like"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product-recommendations"
+  ]
+}

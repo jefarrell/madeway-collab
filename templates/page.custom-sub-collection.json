@@ -1,0 +1,49 @@
+{
+  "sections": {
+    "main": {
+      "type": "static-page",
+      "disabled": true,
+      "settings": {
+        "show-breadcrumbs": false,
+        "title": "",
+        "content": ""
+      }
+    },
+    "7a3f8205-6bf2-4827-8b1d-f0881774e076": {
+      "type": "dynamic-collection-list",
+      "blocks": {
+        "template--21315177054492__7a3f8205-6bf2-4827-8b1d-f0881774e076-feature-1": {
+          "type": "feature",
+          "settings": {
+            "collection": "coffee-bench"
+          }
+        },
+        "template--21315177054492__7a3f8205-6bf2-4827-8b1d-f0881774e076-feature-2": {
+          "type": "feature",
+          "settings": {
+            "collection": "dining-desk-height-legs-bases"
+          }
+        },
+        "template--21315177054492__7a3f8205-6bf2-4827-8b1d-f0881774e076-feature-3": {
+          "type": "feature",
+          "settings": {
+            "collection": "counter-bar"
+          }
+        }
+      },
+      "block_order": [
+        "template--21315177054492__7a3f8205-6bf2-4827-8b1d-f0881774e076-feature-1",
+        "template--21315177054492__7a3f8205-6bf2-4827-8b1d-f0881774e076-feature-2",
+        "template--21315177054492__7a3f8205-6bf2-4827-8b1d-f0881774e076-feature-3"
+      ],
+      "settings": {
+        "title": "",
+        "border": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7a3f8205-6bf2-4827-8b1d-f0881774e076"
+  ]
+}
