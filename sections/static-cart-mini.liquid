@@ -127,6 +127,21 @@
     {% endif %}
   </div>
 
+  <div class="instructions instructions-mini">
+          <label for="cart__note">
+            {{- 'cart.note' | t -}}
+          </label>
+
+          <textarea
+            class="field field-mini"
+            id="cart__note"
+            name="note"
+            placeholder="Please include any pertinent project details or custom requests you may have for your order. We will follow up to confirm and discuss any additional costs."
+          >
+            {{- cart.note -}}
+          </textarea>
+        </div>
+
   <div class="cart-mini-footer" data-cart-mini-footer>
     {% if cart.item_count > 0 %}
       {%- if cart.cart_level_discount_applications.size > 0 -%}

@@ -30970,6 +30970,7 @@ class Product {
       this.window.on(`scroll.${this.eventId}`, this.setupProductDetails);
     }
 
+    // Call the setDefaultPlaceholder function before setting up the variant switch
     this.window.on(`shopify-variants:switch-variant.${this.eventId}`, (event, data) => this._onVariantSwitch(data.product, data.variant));
     this.setupVariants();
 
@@ -31002,39 +31003,82 @@ class Product {
     }
   }
 
-  setupVariants() {
-    if (!this.data.product) return;
-    const $variants = jquery_default()('[data-variants]', this.el);
-    const $options = jquery_default()('[data-product-option]', this.el);
-    const $defaultVariant = jquery_default()('input.product-select', this.el);
-    if (!$variants.length && !$defaultVariant) return;
-    this.surfacePickUp = new shopify_surface_pick_up_dist_index_es(this.el.querySelector('[data-surface-pick-up]'));
+setupVariants() {
+  if (!this.data.product) return;
+  const $variants = jquery_default()('[data-variants]', this.el);
+  const $options = jquery_default()('[data-product-option]', this.el);
+  const $defaultVariant = jquery_default()('input.product-select', this.el);
+  if (!$variants.length && !$defaultVariant) return;
+  this.surfacePickUp = new shopify_surface_pick_up_dist_index_es(this.el.querySelector('[data-surface-pick-up]'));
 
-    if ($variants.length && $options.length) {
-      this.variantHelpers = new shopify_variants_es(this.data.product, $variants, $options);
-    }
-    const selectedVariant = () => this.variantHelpers ? this.variantHelpers.getSelectedVariant() : this.data.product.variants[0]; // product has only default variant
+  // Initialize option.selected_value as an empty string for each option
+  // $options.each(function() {
+  //   // const $thisOption = jquery_default()(this);
+  //   // const optionIndex = $thisOption.data('product-option').replace('option', '');
+  //   // const option = this.data.product.options[optionIndex];
+  //   console.log(option)
+  //   // option.selected_value = "";
+  // });
 
-    ///////////// JF
-    // console.log("variants ", $variants)
-    // console.log("prod ", this.data.product)
-    // console.log("helpers ", this.variantHelpers.getSelectedVariant())
-    //$options.siblings('[data-selected-option]').text('Select an option');
-    /////////////
-    if (!this.surfacePickUp.el) return;
-    this.surfacePickUp.load(selectedVariant().id);
-    this.surfacePickUp.onModalRequest(content => {
-      const variantTitle = this.variantHelpers ? `<div class="sidebar-drawer__surface-pick-up-variant">${selectedVariant().title}</div>` : '';
-      const header = `
-          <h2 class="sidebar-drawer__surface-pick-up-title">${this.data.product.title}</h2>
-          ${variantTitle}
-        `;
-      components_SidebarDrawer.open({
-        header,
-        content
-      });
-    });
+  if ($variants.length && $options.length) {
+    this.variantHelpers = new shopify_variants_es(this.data.product, $variants, $options);
   }
+  const selectedVariant = () => this.variantHelpers ? this.variantHelpers.getSelectedVariant() : this.data.product.variants[0]; // product has only default variant
+
+  // Update the options to display "Select an option" initially
+  $options.siblings('[data-selected-option]').text(`Select an option`);
+  console.log($options)
+
+  if (!this.surfacePickUp.el) return;
+  this.surfacePickUp.load(selectedVariant().id);
+  this.surfacePickUp.onModalRequest(content => {
+    const variantTitle = this.variantHelpers ? `<div class="sidebar-drawer__surface-pick-up-variant">${selectedVariant().title}</div>` : '';
+    const header = `
+        <h2 class="sidebar-drawer__surface-pick-up-title">${this.data.product.title}</h2>
+        ${variantTitle}
+      `;
+    components_SidebarDrawer.open({
+      header,
+      content
+    });
+  });
+}
+
+
+
+  // setupVariants() {
+  //   if (!this.data.product) return;
+  //   const $variants = jquery_default()('[data-variants]', this.el);
+  //   const $options = jquery_default()('[data-product-option]', this.el);
+  //   const $defaultVariant = jquery_default()('input.product-select', this.el);
+  //   if (!$variants.length && !$defaultVariant) return;
+  //   this.surfacePickUp = new shopify_surface_pick_up_dist_index_es(this.el.querySelector('[data-surface-pick-up]'));
+
+  //   if ($variants.length && $options.length) {
+  //     this.variantHelpers = new shopify_variants_es(this.data.product, $variants, $options);
+  //   }
+  //   const selectedVariant = () => this.variantHelpers ? this.variantHelpers.getSelectedVariant() : this.data.product.variants[0]; // product has only default variant
+
+  //   ///////////// JF
+  //   // console.log("variants ", $variants)
+  //   // console.log("prod ", this.data.product)
+  //   // console.log("helpers ", this.variantHelpers.getSelectedVariant())
+  //   //$options.siblings('[data-selected-option]').text('Select an option');
+  //   /////////////
+  //   if (!this.surfacePickUp.el) return;
+  //   this.surfacePickUp.load(selectedVariant().id);
+  //   this.surfacePickUp.onModalRequest(content => {
+  //     const variantTitle = this.variantHelpers ? `<div class="sidebar-drawer__surface-pick-up-variant">${selectedVariant().title}</div>` : '';
+  //     const header = `
+  //         <h2 class="sidebar-drawer__surface-pick-up-title">${this.data.product.title}</h2>
+  //         ${variantTitle}
+  //       `;
+  //     components_SidebarDrawer.open({
+  //       header,
+  //       content
+  //     });
+  //   });
+  // }
 
   onScroll() {
     const viewportWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -31202,6 +31246,7 @@ class Product {
 
     this._updateHistory(variant);
   }
+
 
   _updateTaxLine(variant) {
     if (!this.variantFields.taxLine) return;

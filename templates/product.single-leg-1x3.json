@@ -58,7 +58,7 @@
           "type": "plain_text",
           "settings": {
             "title": "Product Details",
-            "content": "<div class=\"accordion-wrapper\">\n        <ul class=\"accordion-list column\">\n           <li>This item is MADE-TO-ORDER. Production times vary from 2-4 weeks depending on shop workload. Please check current lead times <a href=\"https:\/\/madeway-design.myshopify.com\/pages\/lead-times\">HERE.<\/a> <\/li>\n           <li>Finish options shown below. <\/li>\n           <li>Mounting Plate - Flat Plate or Pro Plate, details below<\/li>\n        <\/ul>\n        <ul class=\"accordion-list column\">\n           <li>Leveling feet come standard with this design.<\/li>\n           <li>Made with 14 gauge 2x2 American hot-rolled tube steel <\/li>\n           <li>Shipping cost calculated at checkout.<\/li>\n           <li>Handmade in the USA.<\/li>\n        <\/ul>\n        <\/div>"
+            "content": "<div class=\"accordion-wrapper\">\n        <ul class=\"accordion-list column\">\n           <li>This item is MADE-TO-ORDER. Production times vary from 2-4 weeks depending on shop workload. Please check current lead times <a href=\"https:\/\/madeway-design.myshopify.com\/pages\/lead-times\">HERE.<\/a> <\/li>\n           <li>Finish options shown below. <\/li>\n           <li>Mounting Plate - 3\/16\" thick, 5\" x 5\".<\/li>\n           <li>5\/16\" round mounting holes.<\/li>\n        <\/ul>\n        <ul class=\"accordion-list column\">\n           <li>Plastic glides or leveling feet, details below.<\/li>\n           <li>Made with 14 gauge 1x3 American hot-rolled tube steel <\/li>\n           <li>Shipping cost calculated at checkout.<\/li>\n           <li>Handmade in the USA.<\/li>\n        <\/ul>\n        <\/div>"
           }
         }
       },
@@ -75,7 +75,7 @@
           "type": "plain_text",
           "settings": {
             "title": "Choosing Dimensions",
-            "content": "<div class=\"accordion-wrapper\">\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3 class=\"title\">HEIGHT<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>Remember to subtract the thickness of your table top when selecting your leg or base height.<\/li>\n                 <li>For example, if your tabletop is 2\" thick and you are building a 30\" tall dining table, you will choose 28\" for the height of your table legs or base.<\/li>\n                 <li>Standard finished heights below, subtract table top thickness to calculate proper leg or base height.<\/li>\n              <\/ul>\n              <table border=\"2\">\n                 <tbody>\n                    <tr>\n                       <td>Coffee height<\/td>\n                       <td>14\"-18\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bench Height<\/td>\n                       <td>18\"-20\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Dining Height<\/td>\n                       <td>29\"-30\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Counter Height<\/td>\n                       <td>34\"-36\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bar Height<\/td>\n                       <td>42\"-44\"<\/td>\n                    <\/tr>\n                 <\/tbody>\n              <\/table>\n           <\/div>\n        <\/div>\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3>WIDTH<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>The proper width of your legs or base can vary depending on preference and use. A safe rule of thumb is for the legs to be at least two-thirds of the width of the tabletop<\/li>\n                 <li>For instance, if your tabletop is 36\" wide, the legs should be 24\" or wider, depending on aesthetic preference. Please contact us if you need help with sizing to optimize stability and seating room.<\/li>\n              <\/ul>\n           <\/div>\n           <div class=\"inner-section\">\n                 <h3>LENGTH<\/h3>\n                 <ul class=\"accordion-list\">\n                    <li>It's best to leave at least 12\" of overhand on the end of your table if you plan to have head of table seating<\/li>\n                    <li>Some table bases provide more seating room than others. If you have any concerns, please reach out to us and we can help optimize your table base length to suit your seating needs.<\/li>\n                 <\/ul>\n           <\/div>\n        <\/div>\n      <\/div>"
+            "content": "<div class=\"accordion-wrapper\">\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <h3 class=\"title\">HEIGHT<\/h3>\n              <ul class=\"accordion-list\">\n                 <li>Remember to subtract the thickness of your tabletop when selecting your leg or base height.<\/li>\n                 <li>Example: if your tabletop is 2\" thick and you are building a 30\" tall dining table, you will choose 28\" for the height of your table legs or base.<\/li>\n\n                 <li>Standard finished heights to the right, subtract table top thickness to calculate proper leg or base height.<\/li>\n<\/tr>\n                 <\/tbody>\n              <\/table>\n           <\/div>\n        <\/div>\n        <div class=\"column\">\n           <div class=\"inner-section\">\n              <\/ul>\n<br \/> \n              <table\n border=\"2\">\n                 <tbody>\n                    <tr>\n                       <td>Coffee height<\/td>\n                       <td>14\"-18\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bench Height<\/td>\n                       <td>18\"-20\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Dining Height<\/td>\n                       <td>29\"-30\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Counter Height<\/td>\n                       <td>34\"-36\"<\/td>\n                    <\/tr>\n                    <tr>\n                       <td>Bar Height<\/td>\n                       <td>42\"-44\"<\/td>\n                    <\/tr>\n                 <\/tbody>\n              <\/table>\n           <\/div>\n        <\/div>\n        <div class=\"column\">\n           <div class=\"inner-section\">"
           }
         }
       },
@@ -117,21 +117,17 @@
         "custom_liquid": "<h3 style=\"font-size: 32px; text-align: center\">Finish Options<\/h3>\n<div class=\"image-gallery\">\n  <div class=\"thumbnails\"><\/div>\n\n  <div class=\"selected-image\">\n    <img src=\"placeholder.jpg\" alt=\"\" id=\"largeImage\">\n    <div class=\"details\">\n      <h3 id=\"selectedTitle\"><\/h3>\n      <p id=\"selectedDescription\"><\/p>\n    <\/div>\n  <\/div>\n<\/div>"
       }
     },
-    "862a27c2-e8ab-4176-aa6f-a1859ae5fbcf": {
-      "type": "mounting-plate-pro",
-      "settings": {
-      }
-    },
     "2d4cc64b-1e9c-4718-bb41-d34f182dc410": {
       "type": "dynamic-custom-liquid",
       "custom_css": [
-        ".wrapper {display: flex; flex-direction: column; align-items: center;}",
-        "h3 {font-size: 24px; text-align: center; margin-bottom: 0;}",
-        ".title {font-size: 32px;}",
+        ".side-by {display: flex; @media only screen and (max-width: 768px) {flex-direction: column; }}",
+        "h3 {font-size: 24px; text-align: center;}",
+        ".column {flex: 50%; display: flex; flex-direction: column; align-items: center; padding-right: 32px;}",
+        ".title {font-size: 32px; margin-top: 64px;}",
         "img {max-width: 30%;}"
       ],
       "settings": {
-        "custom_liquid": "<div class=\"wrapper\">\n<h3 class=\"title\">Footing Options<\/h3>\n  <h3 class=\"picture-block-heading\">Leveler Feet<\/h3>\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0737\/2236\/4188\/files\/leveler_foot_1024x1024.jpg?v=1696692577\" \/>\n  <p class=\"picture-block-body\">Leveler Feet come standard with this design.<\/p>\n<\/div>"
+        "custom_liquid": "<h3 class=\"title\">Footing Options<\/h3>\n<div class=\"side-by\">\n<div class=\"column\">\n  <h3 class=\"picture-block-heading\">Plastic Glides<\/h3>\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0737\/2236\/4188\/files\/plastic_glide_1024x1024.jpg?v=1696692624\" \/>\n  <p class=\"picture-block-body\">This standard option is affordable and easy on floors.<\/p>\n<\/div>\n<div class=\"column\">\n  <h3 class=\"picture-block-heading\">Leveler Feet<\/h3>\n  <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0737\/2236\/4188\/files\/leveler_foot_1024x1024.jpg?v=1696692577\" \/>\n  <p class=\"picture-block-body\">Ensure your table is wobble free with this functional add-on.<\/p>\n<\/div>\n<\/div>"
       }
     },
     "product-recommendations": {
@@ -148,7 +144,6 @@
     "5baf8246-ad51-4657-9f68-5b5b190850a4",
     "9ea8973f-ffcb-47f7-95e6-6397ca3c9a05",
     "d7fb97ef-419f-4aa1-a198-1118c2455054",
-    "862a27c2-e8ab-4176-aa6f-a1859ae5fbcf",
     "2d4cc64b-1e9c-4718-bb41-d34f182dc410",
     "product-recommendations"
   ]
