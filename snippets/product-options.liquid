@@ -15,7 +15,7 @@
   id="product-select-{{ form_id }}"
   data-variants
 >
-  <option value="test1" selected="selected">Select an option</option>
+  <option value="">Select an option</option>
   {% for variant in product.variants %}
     {% if variant.available %}
       <option
@@ -53,43 +53,37 @@
     </div>
 
     <div class="js-required select-wrapper">
-      <span data-selected-option></span>
+      <span data-selected-option>Select {{ option.name }}</span> <!-- Default placeholder text -->
 
       <select
         class="single-option-selector"
         id="{{ option_id }}"
-        data-product-option="{{ 'option' | append: option_index }}"
-      >
-        <option value="test2" selected="selected">Select an option</option>
+        data-product-option="{{ 'option' | append: option_index }}">
+        <option value="">Select an option</option> <!-- Remove selected attribute -->
         {% for value in option.values %}
           <option
             class="jjjjjjj"
             value="{{ value | escape }}"
             {% if option.selected_value == value %}
-              selected="selected"
-            {% endif %}
-          >
+            selected="selected"
+            {% endif %}>
             {{ value }}
           </option>
         {% endfor %}
       </select>
     </div>
   {% else %}
-    <div
-      class="
-        option-header
-        js-required
-      "
-    >
+    <div class="
+                                option-header
+                                js-required
+                              ">
       <span class="option-name">{{ option.name }}:</span>
     </div>
 
-    <div
-      class="
-        option-values
-        js-required
-      "
-    >
+    <div class="
+                                option-values
+                                js-required
+                              ">
       {% assign optionIndex = forloop.index %}
 
       {% for value in option.values %}
@@ -102,10 +96,9 @@
             tabindex="0"
             aria-label="{{ value | escape }}"
             {% if option.selected_value == value %}
-              checked
+            checked
             {% endif %}
-            data-product-option="{{ 'option' | append: optionIndex }}"
-          >
+            data-product-option="{{ 'option' | append: optionIndex }}">
 
           <span class="option-value-name">{{ value }}</span>
         </div>
@@ -113,3 +106,4 @@
     </div>
   {% endif %}
 {% endfor %}
+

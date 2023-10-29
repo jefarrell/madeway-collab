@@ -6,7 +6,7 @@
         "block-1": {
           "type": "feature",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Vista_Cozy_CROP.jpg",
+            "image": "shopify:\/\/shop_images\/7VistaCozy.jpg",
             "slide_title": "Finish Strong",
             "caption": "Custom steel table bases worthy of your workmanship.",
             "button": "Shop all products",
@@ -94,6 +94,9 @@
     },
     "dynamic-image-with-text-1": {
       "type": "dynamic-image-with-text",
+      "custom_css": [
+
+      ],
       "settings": {
         "margin": "regular",
         "image": "shopify:\/\/shop_images\/Atlas_Spider_Base.jpg",
@@ -101,8 +104,8 @@
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
-        "title": "Elevate your vision.",
-        "content": ""
+        "title": "Exceptional from the ground up",
+        "content": "<p>Your work deserves a quality foundation that's built to last.<\/p>"
       }
     },
     "78466add-a2c7-4342-87e5-2e03057d2ee0": {
@@ -119,13 +122,13 @@
       "type": "dynamic-image-with-text",
       "settings": {
         "margin": "none",
-        "image": "shopify:\/\/shop_images\/Vista_Modern_Shot.jpg",
+        "image": "shopify:\/\/shop_images\/SpokesRect.jpg",
         "alignment": "right",
         "desktop_height": "natural",
         "mobile_height": "natural",
         "parallax": false,
-        "title": "Made in the USA",
-        "content": "<p>Discover pieces that perfectly suit your style, handcrafted with care.<\/p>"
+        "title": "Down to the details",
+        "content": "<p>You're in control with a service experience geared to the discerning artist and demanding professional.<\/p>"
       }
     },
     "dynamic-twitter-1": {
