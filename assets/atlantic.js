@@ -30972,6 +30972,20 @@ class Product {
 
     // Call the setDefaultPlaceholder function before setting up the variant switch
     this.window.on(`shopify-variants:switch-variant.${this.eventId}`, (event, data) => this._onVariantSwitch(data.product, data.variant));
+
+	// ST Update
+	document.addEventListener("stVariant:update", e => {
+		const variant = e.detail.variant
+
+		this.surfacePickUp.load(variant.id);
+		this.paymentTerms.update(variant.id);
+		this._updatePrice(variant);
+		this._updateUnitPrice(variant);
+		this._updateTaxLine(variant);
+		this.productGallery.selectMediaByVariant(variant);
+		this._updateHistory(variant);
+	})
+
     this.setupVariants();
 
     if (window.Shopify && Shopify.PaymentButton) {
@@ -31216,7 +31230,7 @@ setupVariants() {
   }
 
   _onVariantSwitch(product, variant) {
-    if (product !== this.data.product) {
+	if (product !== this.data.product) {
       return;
     }
 

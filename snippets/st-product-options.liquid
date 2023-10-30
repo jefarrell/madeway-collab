@@ -1,0 +1,49 @@
+<!-- snippets/st-product-options.liquid -->
+
+{% comment %} 
+    Reuired:
+        product {object} - The product data
+        form_id {string} - The product form id
+{% endcomment %}
+
+<st-product-options>
+
+<input type="hidden" name="id" value="" class="js-st-input-id">
+
+{% for option in product.options_with_values %}
+    {% assign option_index = forloop.index %}
+    {%- capture option_id -%}
+        single-option-{{ form_id }}-{{ option_index }}
+    {%- endcapture -%}
+
+    <div class="select-header">
+      <label class="option-name" for="{{ option_id }}">{{ option.name }}:</label>
+    </div>
+    
+    <div class="st-select-wrapper">
+
+        <select
+            required
+            name="{{ 'option' | append: option_index }}"
+            class="js-st-input-options"
+            id="{{ option_id }}">
+
+            <option value="" disabled selected>Select {{ option.name }}</option> 
+
+            {% for value in option.values %}
+
+                <option
+                    value="{{ value | escape }}">
+                    {{ value }}
+                </option>
+
+            {% endfor %}
+
+        </select>
+        
+    </div>
+{% endfor %}
+
+</st-product-options>
+
+

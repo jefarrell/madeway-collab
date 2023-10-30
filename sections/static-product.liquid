@@ -43,6 +43,9 @@
   }
 </script>
 
+{% comment %} ST Update - Style {% endcomment %}
+{{ 'st-product-options.css' | asset_url | stylesheet_tag }}
+
 <div class="content-area">
   {% render 'breadcrumbs' %}
 </div>
@@ -65,6 +68,12 @@
   Theme.products["{{ product.id }}"] = {{ product | json }};
   Theme.products["{{ product.id }}"].firstVariant = {{ product.selected_or_first_available_variant.id | json }};
 </script>
+
+{% comment %} 
+  ST Update - JS 
+{% endcomment %}
+
+<script src="{{ 'st-product-options.js' | asset_url }}" defer></script>
 
 {% schema %}
 {

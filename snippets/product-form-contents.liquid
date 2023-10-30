@@ -36,13 +36,24 @@
         "
       >
         {% unless product.has_only_default_variant %}
-          {%
-            render 'product-options',
-            product: product,
-            form_id: form_id,
-            selected_variant: selected_variant,
-            style: variant_options_style,
-          %}
+          {% if variant_options_style == 'select' %}
+            {% comment %} 
+              ST Update
+            {% endcomment %}
+            {%
+              render 'st-product-options',
+              product: product,
+              form_id: form_id,
+            %}
+          {% else %}
+            {%
+              render 'product-options',
+              product: product,
+              form_id: form_id,
+              selected_variant: selected_variant,
+              style: variant_options_style,
+            %}
+          {% endif %}
         {% else %}
           <input
             class="product-select"
@@ -334,6 +345,11 @@
           product-submit
           action-button
           submit
+          {% unless product.has_only_default_variant %}
+            st-atc-button
+            js-st-atc-button
+          {% endunless %}
+          
           {% if show_spb %}
             desaturated
           {% endif %}
@@ -341,9 +357,11 @@
             disabled
           {% endif %}
         "
-        {% unless selected_variant.available %}
+        {% comment %} ST Updates {% endcomment %}
+        {% unless product.has_only_default_variant %}
           disabled
         {% endunless %}
+
         {% if onboarding or template.name == 'password' %}
           disabled
         {% endif %}
@@ -357,7 +375,7 @@
             {{ 'products.product_item.sold_out' | t }}
           {% endif %}
         </span>
-
+          
         <span class="product-card-interaction-addtocart-error">
           {{ 'products.product_item.unavailable' | t }}
         </span>
