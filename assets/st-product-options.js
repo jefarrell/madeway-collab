@@ -46,9 +46,10 @@ class ProductOptions extends HTMLElement {
         // This update should activate the "Shop Pay" button
         this.input.value = currentVariant.id
 
-        // Update ATC Button
-        // Remove "disbled" attribute
-        this.button.disabled = false
+        // Re-initialize Shopify Payment Button
+        if (window.Shopify && Shopify.PaymentButton) {
+            Shopify.PaymentButton.init();
+        }
 
         // Send data to "Atlantic theme" for update of images, price and url
         const variantUpdate = new CustomEvent("stVariant:update", {
