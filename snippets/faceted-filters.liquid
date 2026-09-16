@@ -11,12 +11,24 @@
   </label>
   <div class="{{ class_prefix }}__filters">
     {%- for filter in filters -%}
-      {%
-        render 'faceted-filter-group',
-        filter: filter,
-        class_prefix: class_prefix.
-        forloop: forloop
-      %}
+      {% render 'faceted-filter-group', filter: filter, class_prefix: class_prefix, forloop: forloop %}
     {%- endfor -%}
   </div>
 </div>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: |-
+    {%
+            render 'faceted-filter-group',
+            filter: filter,
+            class_prefix: class_prefix.
+            forloop: forloop
+          %}
+  to: "{% render 'faceted-filter-group', filter: filter, class_prefix: class_prefix,
+    forloop: forloop %}"
+  position: 447..544
+{% endcomment %}
